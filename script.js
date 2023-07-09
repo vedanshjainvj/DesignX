@@ -40,6 +40,8 @@ window.onscroll = function(){
     progress.style.height = progressHeight + "%";
 }
 
+// Login Form Code
+
   document.getElementById('loginbtn').addEventListener('click', () => {
     var loginBox = document.getElementById('loginbox');
     if (loginBox.style.display === "none" || loginBox.style.display === "") {
