@@ -211,6 +211,30 @@ span{
     bottom: 15%;
     height: 35vh;
 }
+.bgimg11 img{
+    position: absolute;
+    left: 2rem;
+    top: -5rem;
+    height: 40vh;
+}
+.bgimg12 img{
+    position: absolute;
+    right: 0rem;
+    top: 15%;
+    height: 40vh;
+}
+.bgimg13 img{
+    position: absolute;
+    left: 0rem;
+    top: 35%;
+    height: 35vh;
+}
+.bgimg14 img{
+    position: absolute;
+    right: 0rem;
+    top: 50%;
+    height: 35vh;
+}
 /* Prizes Section Here */
 .prizes{
     position: relative;
@@ -998,3 +1022,104 @@ video{
     padding: 1rem;
     width: 15vw;
   }
+  .vcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+  }
+  .vtimeline {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+  #roadmap{
+    position: relative;
+  }
+  
+  .vtimeline ul {
+    list-style: none;
+  }
+  .vtimeline ul li {
+    padding: 3rem;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .vtimeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .vtimeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .vtimeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .vtimeline-content .vdate {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  @media only screen and (min-width: 768px) {
+    .vtimeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: gray;
+    }
+    .vtimeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .vtimeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .vtimeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .vtimeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: rgb(18, 17, 17);
+      top: 0px;
+    }
+    .vtimeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+    .vtimeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+    .vtimeline-content .vdate {
+      position: absolute;
+      top: -30px;
+    }
+    .vtimeline ul li:hover::before {
+      background-color: #ec0681;
+    }
+  }
+  
