@@ -235,6 +235,18 @@ span{
     top: 50%;
     height: 35vh;
 }
+.bgimg15 img{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 50vh;
+}
+.bgimg16 img{
+    position: absolute;
+    left: 0;
+    top: 22%;
+    height: 50vh;
+}
 /* Prizes Section Here */
 .prizes{
     position: relative;
@@ -1028,6 +1040,7 @@ video{
     align-items: center;
     justify-content: center;
     padding: 5rem 0;
+    position: relative;
   }
   .vtimeline {
     width: 80%;
@@ -1122,4 +1135,13 @@ video{
       background-color: #ec0681;
     }
   }
-  
+  .contactme{
+    text-align: center;
+    min-height: 90vh;
+  }
+  .contactuso{
+    padding-top: 1rem;
+  }
+  .op{
+    margin-top: 5rem;
+  }
